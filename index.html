@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">.........Glinkerk's Game Den.......</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* --- CSS Styles --- */
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            background-color: #181818;
+            color: #ddd;
+            line-height: 1.4;
+        }
+
+        header {
+            background-color: #2f4f4f;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #8fbc8f;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #b8860b;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        main {
+            padding: 1rem;
+            max-width: 960px;
+            margin: 0 auto;
+            overflow: visible; /* Change overflow to visible */
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 1.6rem;
+            margin-bottom: 0.4rem;
+            color: #dda0dd;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #eee;
+        }
+
+        .latest-blog-posts {
+            margin-bottom: 1.5rem;
+        }
+
+        .latest-blog-posts h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #dda0dd;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .blog-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .blog-post {
+            border: 1px solid #666;
+            padding: 0.8rem;
+            border-radius: 6px;
+            background-color: #444;
+            margin-bottom: 0.8rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .blog-post:hover {
+            background-color: #555;
+        }
+
+        /* Image Style */
+        .blog-post img {
+          width: 100%;
+          height: auto;
+          object-fit: scale-down;
+        }
+
+        .blog-post h3 {
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            color: #eee;
+        }
+
+        footer {
+            background-color: #2f4f4f;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            color: #aaa;
+            font-size: 0.8rem;
+            border-top: 2px solid #8fbc8f;
+        }
+
+        .blog-post-content {
+          padding: 10px;
+        }
+
+        /*Social Medias */
+
+        .social-links {
+            position: fixed; /* Fixed to the screen */
+            top: 10px;         /* Adjust distance from the top */
+            left: 10px;         /* Adjust distance from the left */
+            display: flex;       /* Arrange links horizontally */
+            flex-direction: column; /* Stack links vertically */
+            z-index: 100;         /* Ensure it's above other elements */
+        }
+
+        .social-links a {
+            display: block;     /* Each link on a new line */
+            margin-bottom: 0.5rem;  /* Spacing between links */
+            color: #fff;        /* White color */
+            font-size: 1.5rem;  /* Icon size */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #dda0dd;       /* Highlight on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+     <div class="social-links">
+        <a href="https://www.youtube.com/@Glinkops" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://t.me/Glinkerk" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.twitch.tv/glinkerk1337" target="_blank"><i class="fab fa-twitch"></i></a>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1 data-i18n="logo">....... Glinkerk blog......</h1>
+        </div>
+        <nav>
+            <ul>
+                <!-- Add navigation links here if needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h1 data-i18n="hero_title">Welcome to Glinkerk's Game Den!</h1>
+            <p data-i18n="hero_description">Discover unique games and insightful developer blogs.</p>
+        </section>
+
+        <section class="latest-blog-posts" id="blog">
+            <h2 data-i18n="latest_blog_posts">Latest in the Blog</h2>
+
+            <!-- ПОСТЫ -->
+            <div class="blog-post">
+                <img src="https://i.postimg.cc/zvSQNRdz/image.jpg" alt="Hi all">
+                <h3>Welcome</h3>
+                <p>Thanks to everyone who came and decided to look at this site and this post!</p>
+            </div>
+
+            <div class="blog-grid">
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p data-i18n="footer">© COPYRITE LOL</p>
+    </footer>
+
+    <script>
+        /* --- JavaScript Code --- */
+
+        const translations = {
+            title: "Glinkerk Blog",
+            logo: "...........Glinkerk Blog.......",
+            home: "Home",
+            blog: "Blog",
+            footer: "© Copyrite LOL",
+            hero_title: "Welcome to Glinkerk Blog!",
+            hero_description: "uhm here is all the info about me.",
+            latest_blog_posts: "Latest in the Blog"
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Function to translate the page
+            function translatePage() {
+                document.querySelectorAll('[data-i18n]').forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    if (translations[key]) {
+                        element.textContent = translations[key];
+                    }
+                });
+            }
+
+            translatePage(); // Initial page translation
+        });
+    </script>
+</body>
+</html>
